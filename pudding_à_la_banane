@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS public."pudding_à_la_banane"
+(
+    saveur_id character varying(50) COLLATE pg_catalog."default" NOT NULL DEFAULT nextval('"pudding_à_la_banane_saveur_id_seq"'::regclass),
+    prix money NOT NULL,
+    "février" integer,
+    mars integer,
+    avril integer,
+    mai integer,
+    juin integer,
+    "août" integer,
+    septembre integer,
+    octobre integer,
+    novembre integer,
+    CONSTRAINT "pudding_à_la_banane_pkey" PRIMARY KEY (saveur_id)
+)
