@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS public."le_ventre_rassasié"
+(
+    "Accompagnements/Plats_id" character varying COLLATE pg_catalog."default" NOT NULL DEFAULT nextval('"le_ventre_rassasié_Accompagnements/Plats_id_seq"'::regclass),
+    prix money NOT NULL,
+    "février" integer,
+    mars integer,
+    avril integer,
+    mai integer,
+    juin integer,
+    "août" integer,
+    septembre integer,
+    octobre integer,
+    novembre integer,
+    CONSTRAINT "le_ventre_rassasié_pkey" PRIMARY KEY ("Accompagnements/Plats_id")
+)
