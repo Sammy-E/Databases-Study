@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS public.mj
+(
+    "Plats/desserts_id" character varying(50) COLLATE pg_catalog."default" NOT NULL DEFAULT nextval('"mj_Plats/desserts_id_seq"'::regclass),
+    prix money NOT NULL,
+    "février" integer,
+    mars integer,
+    avril integer,
+    mai integer,
+    juin integer,
+    "août" integer,
+    septembre integer,
+    octobre integer,
+    novembre integer,
+    CONSTRAINT mj_pkey PRIMARY KEY ("Plats/desserts_id")
+)
