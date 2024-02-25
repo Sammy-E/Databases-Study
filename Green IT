@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS public."Green IT"
+(
+    "Entreprise/Startup" character varying(50) COLLATE pg_catalog."default" NOT NULL DEFAULT nextval('"Green IT_Entreprise/Startup_seq"'::regclass),
+    "Ville/Pays" character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    "matérieau_de_base" character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    "produit_raffiné" character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT "Green IT_pkey" PRIMARY KEY ("Entreprise/Startup")
+)
